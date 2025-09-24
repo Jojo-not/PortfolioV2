@@ -8,6 +8,11 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+     <link
+    href="https://unpkg.com/maplibre-gl@3.6.2/dist/maplibre-gl.css"
+    rel="stylesheet"
+  />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
@@ -76,35 +81,200 @@
         <section class="hero d-flex align-items-center" id="home">
             <div class="container text-center">
                 <h1 class="display-4 fw-bold" style="color:#120429;">Hi, I'm <span class="text-primary">Jowen Miguel</span> Diez</h1>
-                <p class="lead">As a system developer, I design, build, and optimize scalable solutions that enhance functionality, <br> improve efficiency, and deliver seamless user experiences.</p>
+                <p>As a system developer, I design, build, and optimize scalable solutions that enhance functionality, <br> improve efficiency, and deliver seamless user experiences.</p>
                 <a href="#projects" class="btn rounded-5 bg-primary fw-medium w-10 text-light">View My Work</a>
             </div>      
         </section>
         <section class="about" id="about">
-            <div class="container text-center py-5">
-                <h2 class="mb-4 fw-bold" style="color:#120429;">About <span class="text-primary">Me</span> </h2>
+            <div class="container text-center" style="padding-top: 120px;">
+                <h2 class="my-4 fw-bold" style="color:#120429;">About <span class="text-primary">Me</span> </h2>
                 <div class="row justify-content-center align-content-between">
                     <div class="container col-md-6">
-                        <h3 class="py-3" style="color: #120429;">Turning Ideas into Interactive Experiences </h3>
-                       <p style="color: #120429;">As a new system developer, I am eager to build and optimize reliable solutions while continuously learning modern technologies to create efficient and user-focused applications.</p>
-                       <p style="color: #120429;">I’m a system developer who loves building reliable solutions, especially the behind-the-scenes logic that makes applications run smoothly and efficiently. I’m always learning, always coding.</p>
-
+                      <div class="row justify-content-end">
+                        <div class="col-md-8">
+                          <div class="justify-content-end align-content-center">
+                            <h5 class="py-3" style="color: #120429;">Turning Ideas into Interactive Experiences </h3>
+                           <p>As a new system developer, I am eager to build and optimize reliable solutions while continuously learning modern technologies to create efficient and user-focused applications.</p>
+                           <p>I’m a system developer who loves building reliable solutions, especially the behind-the-scenes logic that makes applications run smoothly and efficiently. I’m always learning, always coding.</p>
+                        </div>
+                        <div class="flex my-3">
+                       <a href="#contact" class="btn rounded-5 bg-primary fw-medium text-light" style="width: 150px;">Contact Me</a>
+                       <button class="btn bg-light rounded-5 border-primary text-primary" style="width: 150px;"> Download CV</button>
+                        </div>
+                        </div>
+                      </div>
+                     
                     </div>
                     <div class="col-md-6">
-                        <div class="card">
-                            
+                        <div class="row">
+                          <div class="col-md-8 text-center">
+                            <div class="card border-0 d-flex flex-row align-items-center ps-3 mb-4">
+                              <div class = "icon-cercle bg-primary bg-opacity-10 rounded-5 p-3 m-auto">
+                                <i class="bi bi-code-slash text-primary fw-bold"></i>
+                              </div>
+                              <div class="card-body text-start">
+                              <h5>System Development</h5>
+                              <p>Crafting seamless and efficient systems with a focus on user experience.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-8 text-center">
+                            <div class="card border-0 d-flex flex-row align-items-center ps-3 mb-4">
+                              <div class = "icon-cercle bg-primary bg-opacity-10 rounded-5 p-3 m-auto">
+                                <i class="bi bi-cpu text-primary"></i>
+                              </div>
+                              <div class="card-body text-start">
+                              <h5>Backend Development</h5>
+                              <p>I handle the logic, data, and performance behind every great app.</p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-md-8 text-center">
+                            <div class="card border-0 d-flex flex-row align-items-center ps-3 mb-4">
+                              <div class = "icon-cercle bg-primary bg-opacity-10 rounded-5 p-3 m-auto">
+                                <i class="bi bi-braces text-primary"></i>
+                              </div>
+                              <div class="card-body text-start">
+                              <h5>Project Management</h5>
+                              <p>I handle the logic, data, and performance behind every great app.</p>
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                        
-
                     </div>
-
                 </div>
-                
-                
-                <a href="#contact" class="btn rounded-5 bg-primary fw-medium w-10 text-light">Contact Me</a>
+            </div>
+        </section>
+
+        <section id="gallery" style="padding-top: 120px;" > 
+        <div class="text-center">
+          <h2 class="fw-bold">Featured <span class="text-primary">Gallery</span></h2>
+          <p>Showcasing my recent achievements, each reflecting dedication, creativity, and growth.</p>
+          <div class="row justify-content-center align-content-center">
+            <div class="col-md-2 card m-3" style="width:20rem; height: auto;">
+              <img class="card-img rounded-5" src="/public/gallery/achievement1.jpg" alt="">
+            </div>
+            <div class="col-md-2 card m-3" style="width:20rem; height: auto;">
+              <img class="card-img" src="/public/gallery/achievement1.jpg" alt="">
+            </div>
+            <div class="col-md-2 card m-3" style="width:20rem; height: auto;">
+              <img class="card-img" src="/public/gallery/achievement1.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        </section>
+        <section id="projects" style="padding-top: 120px;"> 
+        <div class="text-center">
+          <h2 class="fw-bold">Featured <span class="text-primary">Projects</span></h2>
+          <p>Showcasing my recent achievements, each reflecting dedication, creativity, and growth.</p>
+          <div class="row justify-content-center mt-5">
+            <div class="col-md-2 card border-0 rounded-3 m-2" style="width:20rem; height: auto;">
+              <img class="card-img-top pt-3 rounded-5" src="/public/gallery/achievement1.jpg" alt="">
+              <div class="card-body">
+              <h5 class="card-title">Vendo Print</h5>
+              <p class="card-text">It’s fast, convenient, and perfect for schools, libraries, and public areas where on-demand printing is needed</p>
+              <div class="d-flex justify-content-sm-start">
+                <a href="" class="btn bi bi-github text-primary">
+                </a>
+                <a href="http://" class="btn bi bi-globe text-primary"></a>
+              </div>
+            </div>
             </div>
 
+             <div class="col-md-2 card border-0 rounded-3 m-2" style="width:20rem; height: auto;">
+              <img class="card-img-top pt-3 rounded-5" src="/public/gallery/achievement1.jpg" alt="">
+              <div class="card-body">
+              <h5 class="card-title">Ticketing System</h5>
+              <p class="card-text">A streamlined support platform that helps teams manage, track, and resolve tickets efficiently.</p>
+              <div class="d-flex justify-content-sm-start">
+                <a href="" class="btn bi bi-github text-primary">
+                </a>
+                <a href="http://" class="btn bi bi-globe text-primary"></a>
+              </div>
+            </div>
+            </div>
+
+             <div class="col-md-2 card border-0 rounded-3 m-2" style="width:20rem; height: auto;">
+              <img class="card-img-top pt-3 rounded-5" src="/public/gallery/achievement1.jpg" alt="">
+              <div class="card-body">
+              <h5 class="card-title">Housing Loan Calculator</h5>
+              <p class="card-text">A simple web application that allows users to calculate their monthly housing loan payments based on the loan amount, interest rate, and loan term..</p>
+              <div class="d-flex justify-content-sm-start">
+                <a href="" class="btn bi bi-github text-primary">
+                </a>
+                <a href="http://" class="btn bi bi-globe text-primary"></a>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
         </section>
+        
+         <section class="about" id="contact">
+            <div class="container text-center" style="padding-top: 80px;">
+                <h2 class="my-4 fw-bold"> Get In <span class="text-primary">Touch</span> </h2>
+                <p>Have a project in mind or want to collaborate? Feel free to reach out. <br>I'm always open to discussing new opportunities.</p>
+                <div class="row justify-content-center align-content-between pt-4 ">
+                    <div class="container col-md-6">
+                      <div class="row justify-content-end">
+                        <div class="col-md-8">
+                          <div class="justify-content-end align-content-center">
+                            <h5 class="fw-bold">My Location </h3>
+                           <iframe class="p-4" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247829.02941703013!2d121.33936506587844!3d13.93903058049234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd4940187e975d%3A0x231e682a37c8dabf!2sSariaya%2C%20Quezon!5e0!3m2!1sen!2sph!4v1758700153261!5m2!1sen!2sph" width="450" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+    
+                        </div>
+                      </div>
+                     
+                    </div>
+                    <div class="col-md-6 container">
+                        <div class="row m-2">
+
+                          <div class="col-md-8 text-center">
+
+                            <div class="card border-0 p-4 mb-4">
+                              <h4 class="fw-bold mb-3" >Send a Message</h4>
+                            <form>
+                          <!-- Name -->
+                          <div class="mb-3">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" style="height: 48px;" id="name" placeholder="Enter your full name" required>
+                          </div>
+                          <!-- Email -->
+                          <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" style="height:48px;" id="email" placeholder="Enter your email" required>
+                          </div>
+                  
+                          <!-- Message -->
+                          <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Write your message here..." required></textarea>
+                          </div>
+                          <!-- Submit Button -->
+                          <div class="d-grid">
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                          </div>
+                        </form>
+                            </div>
+                          </div>
+                          
+
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+          <div>
+            
+          </div>
+
+
+        </footer>
 
 
 
@@ -118,6 +288,7 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/maplibre-gl@3.6.2/dist/maplibre-gl.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

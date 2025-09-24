@@ -4,6 +4,7 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color:#120429;
 }
 
 nav {
@@ -12,4 +13,5 @@ nav {
 section {
   height: 100vh;
   background-color: whitesmoke;
+  min-height: fit-content;
 }
