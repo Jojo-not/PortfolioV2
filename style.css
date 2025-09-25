@@ -4,14 +4,65 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color:#120429;
+  
 }
 
-nav {
-  background-color: #120429;
-}
+
 section {
   height: 100vh;
-  background-color: whitesmoke;
   min-height: fit-content;
+}
+
+body {
+  overflow: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Default Light Theme */
+body {
+  --bg-color: #ffffff;
+  --text-color: #120429;
+  --nav-bg: #f8f9fa;
+  --card-bg: #ffffff;
+  --footer-bg: #120429;
+  --input-color:#120429;
+  overflow-x: hidden;
+}
+
+body[data-theme="dark"] {
+  --bg-color: #0b0218;
+  --text-color: #f1f1f1;
+  --nav-bg: #120429;
+  --card-bg: #120429;
+  --footer-bg: #120429;
+  --input-color:#f1f1f1;
+  overflow-x: hidden;
+}
+
+/* Apply variables */
+section {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.card {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+}
+
+footer {
+  background-color: var(--footer-bg);
+}
+
+h1,h2 h4, h5, h6, p {
+  color: var(--text-color);
+}
+a,i{
+  color: var(--text-color);
+}
+.form-control{
+  color: var(--input-color);
 }
