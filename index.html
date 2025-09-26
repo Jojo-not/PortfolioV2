@@ -34,7 +34,7 @@
   </head>
   <body>
         <nav class="navbar navbar-expand-lg sticky-top" style="background:#120429 ;">
-            <div  class="navbar container-fluid px-lg-5">
+            <div  class="navbar container-fluid px-sm-5">
               <a class="navbar-brand fw-bold text-white" href="#">Jowen <span class="text-primary">Portfolio</span></a>
               <button
                 class="navbar-toggler"
@@ -168,18 +168,23 @@
             </div>
         </section>
 
-        <section id="gallery" style="padding-top: 120px;" > 
-        <div class="text-center">
+        <section id="gallery" class="pt-5">
+        <div class="container text-center">
           <h2 class="fw-bold">Featured <span class="text-primary">Gallery</span></h2>
           <p>Showcasing my recent achievements, each reflecting dedication, creativity, and growth.</p>
-          <div class="row justify-content-center align-content-center">
-              <img class="rounded-5 col-md-2 card-img m-3" style="width:20rem; height: auto;" src="/public/gallery/achievement1.jpg" alt="">
-              <img class="rounded-5 col-md-2 card-img m-3" style="width:20rem; height: auto;" src="/public/gallery/achievement1.jpg" alt="">
-              <img class="rounded-5 col-md-2 card-img m-3" style="width:20rem; height: auto;" src="/public/gallery/achievement1.jpg" alt="">
-          </div>
+          <div class="row justify-content-center">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <img class="rounded-5 img-fluid card-img w-100" src="/public/gallery/achievement1.jpg" alt="">
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <img class="rounded-5 img-fluid card-img w-100" src="/public/gallery/achievement1.jpg" alt="">
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <img class="rounded-5 img-fluid card-img w-100" src="/public/gallery/achievement1.jpg" alt="">
+            </div>
           </div>
         </div>
-        </section>
+      </section>
         <section id="projects" style="padding-top: 120px;"> 
         <div class="text-center">
           <h2 class="fw-bold">Featured <span class="text-primary">Projects</span></h2>
@@ -273,12 +278,12 @@
           <div>
             <h5 class="fw-medium mb-1">Location</h5>
             <span class="">Sto. Cristo, Sariaya Quezon</span>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3872.4121970412975!2d121.47822907448841!3d13.934045193049254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTPCsDU2JzAyLjUiTiAxMjHCsDI4JzUwLjkiRQ!5e0!3m2!1sen!2sph!4v1758879780220!5m2!1sen!2sph" width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
-
         <div class="pt-3">
-          <h5 class="fw-medium mb-3">Connect With Me</h5>
-          <div class="d-flex gap-3">
+          <h5 class="fw-medium mb-3 text-center">Connect With Me</h5>
+          <div class="d-flex gap-3 justify-content-center">
             <a href="https://www.linkedin.com/in/jowen-miguel-l-diez-752181251/" target="_blank" class="text-primary fs-4">
               <i class="bi bi-linkedin"></i>
             </a>
@@ -319,11 +324,9 @@
   </div>
 </section>
  
-        <footer>
-          <div>
-
-            <p class="text-center py-5 text-white">&copy; 2025 Jowen.co. All rights reserved</p>
-            
+        <footer class="mt-4">
+          <div class="py-3">
+            <p class="text-center text-white">&copy; 2025 Jowen.co. All rights reserved</p>
           </div>
         </footer>
 

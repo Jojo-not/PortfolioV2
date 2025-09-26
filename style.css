@@ -4,9 +4,7 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  
 }
-
 
 section {
   height: 100vh;
@@ -28,7 +26,7 @@ body {
   --nav-bg: #f8f9fa;
   --card-bg: #ffffff;
   --footer-bg: #120429;
-  --input-color:#120429;
+  --input-color: #120429;
   overflow-x: hidden;
 }
 
@@ -38,12 +36,12 @@ body[data-theme="dark"] {
   --nav-bg: #120429;
   --card-bg: #120429;
   --footer-bg: #120429;
-  --input-color:#f1f1f1;
+  --input-color: #f1f1f1;
   overflow-x: hidden;
 }
 
 /* Apply variables */
-section {
+body {
   background-color: var(--bg-color);
   color: var(--text-color);
 }
@@ -57,12 +55,17 @@ footer {
   background-color: var(--footer-bg);
 }
 
-h1,h2 h4, h5, h6, p {
+h1,
+h2 h4,
+h5,
+h6,
+p {
   color: var(--text-color);
 }
-a,i{
+a,
+i {
   color: var(--text-color);
 }
-.form-control{
+.form-control {
   color: var(--input-color);
 }
